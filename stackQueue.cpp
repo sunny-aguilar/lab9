@@ -59,7 +59,10 @@ void StackQueue::start() {
 void StackQueue::queueOps() {
     menu.menuQueueRounds();
     queueRounds = menu.validateNumber(1, 1000);
-
+    menu.menuQueueFront();
+    frontChance = menu.validateNumber(0, 100);
+    menu.menuQueueEnd();
+    endChance = menu.validateNumber(0,100);
 }
 
 /*********************************************************************
