@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main() {
-    // kab 9
+    // lab 9
     return 0;
 }
