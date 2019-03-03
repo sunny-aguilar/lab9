@@ -46,7 +46,9 @@ void Menu::menuQueueFront() {
 ** Description:     prompts user to enter the percent chance to put a
 **                  randomly generated number at the end of bugger
 *********************************************************************/
-
+void Menu::menuQueueEnd() {
+    
+}
 
 
 
