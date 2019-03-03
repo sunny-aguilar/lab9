@@ -48,7 +48,10 @@ void StackQueue::start() {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     this functions gathers the data from the user to
+**                  set up the initial buffer parameters. It sets up
+**                  the number of rounds to be simulated and the
+**                  rquired percentages.
 *********************************************************************/
 void StackQueue::queueOps() {
     menu.menuQueueRounds();
