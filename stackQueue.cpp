@@ -22,8 +22,8 @@ StackQueue::~StackQueue() {}
 *********************************************************************/
 void StackQueue::start() {
     bool runProgram = true;
-    menu.mainMenu();
     do {
+        menu.mainMenu();
         switch (menu.validateNumber(1,3)) {
             case 1:
                 queueOps();
@@ -47,7 +47,7 @@ void StackQueue::start() {
 void StackQueue::queueOps() {
     menu.menuQueueRounds();
     queueRounds = menu.validateNumber(1, 1000);
-    
+
 }
 
 /*********************************************************************
