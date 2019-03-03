@@ -39,7 +39,9 @@ void Menu::menuQueueRounds() {
 **                  randomly generated number at the front of bugger
 *********************************************************************/
 void Menu::menuQueueFront() {
-
+    cout << " How many rounds will be simulated?\n";
+    cout << "+--------------------------------------------------+\n";
+    cout << " >> ";
 }
 
 /*********************************************************************
@@ -47,7 +49,9 @@ void Menu::menuQueueFront() {
 **                  randomly generated number at the end of bugger
 *********************************************************************/
 void Menu::menuQueueEnd() {
-    
+    cout << " How many rounds will be simulated?\n";
+    cout << "+--------------------------------------------------+\n";
+    cout << " >> ";
 }
 
 
