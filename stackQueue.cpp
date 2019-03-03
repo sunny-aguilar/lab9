@@ -26,7 +26,7 @@ void StackQueue::start() {
     do {
         switch (menu.validateNumber(1,3)) {
             case 1:
-
+                queueOps();
                 break;
             case 2:
 
@@ -44,7 +44,11 @@ void StackQueue::start() {
 /*********************************************************************
 ** Description:     desc
 *********************************************************************/
-
+void StackQueue::queueOps() {
+    menu.menuQueueRounds();
+    queueRounds = menu.validateNumber(1, 1000);
+    
+}
 
 /*********************************************************************
 ** Description:     desc

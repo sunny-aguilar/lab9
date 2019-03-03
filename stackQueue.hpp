@@ -15,9 +15,11 @@ public:
     StackQueue();
     ~StackQueue();
     void start();
+    void queueOps();
 
 private:
     Menu menu;
+    int queueRounds;
 };
 
 #endif // STACKQUEUE_HPP
