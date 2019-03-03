@@ -9,6 +9,8 @@
 #define STACKQUEUE_HPP
 
 #include "menu.hpp"
+#include <queue>                    // Queue in STL
+#include <stack>                    // Stack in STL
 
 class StackQueue {
 public:
@@ -16,12 +18,14 @@ public:
     ~StackQueue();
     void start();
     void queueOps();
+    void bufferSetup();
 
 private:
     Menu menu;
     int queueRounds;
     int frontChance;
     int endChance;
+    int N;
 };
 
 #endif // STACKQUEUE_HPP

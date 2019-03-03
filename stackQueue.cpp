@@ -13,7 +13,8 @@
 StackQueue::StackQueue() :
     queueRounds{0},
     frontChance{0},
-    endChance{0} {}
+    endChance{0},
+    N{0} {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -51,12 +52,22 @@ void StackQueue::start() {
 }
 
 /*********************************************************************
+** Description:     desc
+*********************************************************************/
+void StackQueue::queueOps() {
+    // set buffer parameters
+    bufferSetup();
+
+
+}
+
+/*********************************************************************
 ** Description:     this functions gathers the data from the user to
 **                  set up the initial buffer parameters. It sets up
 **                  the number of rounds to be simulated and the
 **                  rquired percentages.
 *********************************************************************/
-void StackQueue::queueOps() {
+void StackQueue::bufferSetup() {
     int remainingPercent = 0;
 
     menu.menuQueueRounds();
