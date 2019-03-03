@@ -11,6 +11,9 @@
 #include "menu.hpp"
 #include <queue>                    // Queue in STL
 #include <stack>                    // Stack in STL
+using std::queue;
+using std::stack;
+
 
 class StackQueue {
 public:
@@ -21,6 +24,8 @@ public:
     void bufferSetup();
 
 private:
+    queue <int> gquiz;
+    stack <int> s;
     Menu menu;
     int queueRounds;
     int frontChance;
