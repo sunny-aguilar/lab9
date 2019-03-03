@@ -8,10 +8,11 @@
 #include "menu.hpp"
 
 void Menu::mainMenu() {
-    cout << "\n";
-    cout << ">> \n";
-    cout << ">> \n";
-    cout << ">> \n";
+    cout << "STL CONTAINERS - QUEUE AND STACK\n";
+    cout << "+--------------------------------------------------+\n";
+    cout << " 1. Buffer \n";
+    cout << " 2. Palindrome\n";
+    cout << ">> ";
 }
 
 

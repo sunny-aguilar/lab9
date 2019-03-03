@@ -21,7 +21,7 @@ StackQueue::~StackQueue() {}
 ** Description:     desc
 *********************************************************************/
 void StackQueue::start() {
-
+    menu.mainMenu();
 }
 
 

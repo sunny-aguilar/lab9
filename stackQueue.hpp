@@ -8,13 +8,15 @@
 #ifndef STACKQUEUE_HPP
 #define STACKQUEUE_HPP
 
+#include "menu.hpp"
+
 class StackQueue {
 public:
     StackQueue();
     void start();
 
 private:
-
+    Menu menu;
 };
 
-#endif //LAB9_STACKQUEUE_HPP
+#endif // STACKQUEUE_HPP
