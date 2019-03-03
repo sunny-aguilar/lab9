@@ -10,7 +10,10 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-StackQueue::StackQueue() {}
+StackQueue::StackQueue() :
+    queueRounds{0},
+    frontChance{0.0},
+    endChance{0.0} {}
 
 /*********************************************************************
 ** Description:     destructor

@@ -20,6 +20,8 @@ public:
 private:
     Menu menu;
     int queueRounds;
+    double frontChance;
+    double endChance;
 };
 
 #endif // STACKQUEUE_HPP
