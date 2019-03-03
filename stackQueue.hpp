@@ -13,6 +13,7 @@
 class StackQueue {
 public:
     StackQueue();
+    ~StackQueue();
     void start();
 
 private:
