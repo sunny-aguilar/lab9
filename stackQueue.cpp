@@ -18,10 +18,16 @@ StackQueue::StackQueue() {}
 StackQueue::~StackQueue() {}
 
 /*********************************************************************
-** Description:     desc
+** Description:     this functions starts the program by showing the
+**                  main menu and the options to test the buffer and
+**                  to enter a palindrome. A user can also quit the
+**                  program. After a user completes one of the menu
+**                  operations, the main menu is displayed again for
+**                  user convenience.
 *********************************************************************/
 void StackQueue::start() {
     bool runProgram = true;
+
     do {
         menu.mainMenu();
         switch (menu.validateNumber(1,3)) {
@@ -49,6 +55,16 @@ void StackQueue::queueOps() {
     queueRounds = menu.validateNumber(1, 1000);
 
 }
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+
 
 /*********************************************************************
 ** Description:     desc
