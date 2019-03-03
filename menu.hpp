@@ -23,6 +23,8 @@ using std::endl;
 class Menu {
 public:
     void mainMenu();
+    void menuQueueRounds();
+    void menuExit();
     int validateNumber(int min, int max);
 
 private:

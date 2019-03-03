@@ -17,8 +17,20 @@ void Menu::mainMenu() {
     cout << " >> ";
 }
 
+/*********************************************************************
+** Description:     displays exit message for program
+*********************************************************************/
+void Menu::menuExit() {
+    cout << "Now exiting the program, goodbye\n";
+}
 
+/*********************************************************************
+** Description:     prompts the user for the number of rounds to be
+**                  simulated
+*********************************************************************/
+void Menu::menuQueueRounds() {
 
+}
 
 /*********************************************************************
 ** Description:     general validator where the parameters are the

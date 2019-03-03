@@ -21,22 +21,38 @@ StackQueue::~StackQueue() {}
 ** Description:     desc
 *********************************************************************/
 void StackQueue::start() {
+    bool runProgram = true;
     menu.mainMenu();
-    switch (menu.validateNumber(1,3)) {
-        case 1:
-            break;
-        case 2:
-            break;
-        case 3:
-            break;
-        default:
-            cout << "Unable to determine your selection\n";
-    }
+    do {
+        switch (menu.validateNumber(1,3)) {
+            case 1:
+
+                break;
+            case 2:
+
+                break;
+            case 3:
+                runProgram = false;
+                menu.menuExit();
+                break;
+            default:
+                cout << "Unable to determine your selection\n";
+        }
+    } while (runProgram);
 }
 
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
 
 
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
 
 
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
 
 
