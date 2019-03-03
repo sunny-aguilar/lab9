@@ -10,9 +10,12 @@
 **                  ascending order. Once the arrays are sorted, text
 **                  files are outputted with the sorted values.
 *********************************************************************/
+#include "stackQueue.hpp"
 #include <iostream>
 
 int main() {
-    // lab 9
+
+    StackQueue stl;
+    stl.start();
     return 0;
 }

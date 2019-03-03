@@ -11,6 +11,7 @@
 class StackQueue {
 public:
     StackQueue();
+    void start();
 
 private:
 
