@@ -35,6 +35,21 @@ void Menu::menuQueueRounds() {
 }
 
 /*********************************************************************
+** Description:     prompts user to enter the percent chance to put a
+**                  randomly generated number at the front of bugger
+*********************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************
 ** Description:     general validator where the parameters are the
 **                  min and max numbers acceptable
 *********************************************************************/
