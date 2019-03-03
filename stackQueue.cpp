@@ -63,8 +63,9 @@ void StackQueue::queueOps() {
     queueRounds = menu.validateNumber(1, 1000);
     menu.menuQueueFront();
     frontChance = menu.validateNumber(0, 99);
-    menu.menuQueueEnd();
-    endChance = menu.validateNumber(0,100);
+    remainingPercent = 100 - frontChance;
+    menu.menuQueueEnd(remainingPercent);
+    endChance = menu.validateNumber(0,remainingPercent);
 }
 
 /*********************************************************************

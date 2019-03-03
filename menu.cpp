@@ -40,6 +40,7 @@ void Menu::menuQueueRounds() {
 *********************************************************************/
 void Menu::menuQueueFront() {
     cout << " Enter a percent chance for FRONT (i.e. 25 = 25%)\n";
+    cout << " You can only enter between 1% and 99%\n";
     cout << "+--------------------------------------------------+\n";
     cout << " >> ";
 }
@@ -48,8 +49,9 @@ void Menu::menuQueueFront() {
 ** Description:     prompts user to enter the percent chance to put a
 **                  randomly generated number at the end of bugger
 *********************************************************************/
-void Menu::menuQueueEnd() {
+void Menu::menuQueueEnd(int remain) {
     cout << " Enter a percent chance for END (i.e. 45 = 45%)\n";
+    cout << " You can only enter between 1% and " << remain << "%\n";
     cout << "+--------------------------------------------------+\n";
     cout << " >> ";
 }
