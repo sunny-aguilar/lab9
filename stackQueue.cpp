@@ -12,8 +12,8 @@
 *********************************************************************/
 StackQueue::StackQueue() :
     queueRounds{0},
-    frontChance{0.0},
-    endChance{0.0} {}
+    frontChance{0},
+    endChance{0} {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -57,10 +57,12 @@ void StackQueue::start() {
 **                  rquired percentages.
 *********************************************************************/
 void StackQueue::queueOps() {
+    int remainingPercent = 0;
+
     menu.menuQueueRounds();
     queueRounds = menu.validateNumber(1, 1000);
     menu.menuQueueFront();
-    frontChance = menu.validateNumber(0, 100);
+    frontChance = menu.validateNumber(0, 99);
     menu.menuQueueEnd();
     endChance = menu.validateNumber(0,100);
 }
