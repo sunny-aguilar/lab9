@@ -80,9 +80,14 @@ void StackQueue::bufferSetup() {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     generates a random number from 1 to 1000 and
+**                  returns it
 *********************************************************************/
-
+int StackQueue::generateRandom() {
+    int randomNum = 0;
+    randomNum = rand() % 1000 + 1;
+    return randomNum;
+}
 
 /*********************************************************************
 ** Description:     desc

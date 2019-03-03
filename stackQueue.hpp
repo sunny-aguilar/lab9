@@ -22,10 +22,11 @@ public:
     void start();
     void queueOps();
     void bufferSetup();
+    int generateRandom();
 
 private:
-    queue <int> gquiz;
-    stack <int> s;
+    queue <int> myQueue;
+    stack <int> myStack;
     Menu menu;
     int queueRounds;
     int frontChance;
