@@ -22,6 +22,16 @@ StackQueue::~StackQueue() {}
 *********************************************************************/
 void StackQueue::start() {
     menu.mainMenu();
+    switch (menu.validateNumber(1,3)) {
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        default:
+            cout << "Unable to determine your selection\n";
+    }
 }
 
 

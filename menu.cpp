@@ -13,6 +13,7 @@ void Menu::mainMenu() {
     cout << " Choose from the following:\n";
     cout << " 1. Test the Buffer \n";
     cout << " 2. Create a Palindrome\n";
+    cout << " 3. Exit Program\n";
     cout << " >> ";
 }
 
