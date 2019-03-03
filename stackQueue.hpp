@@ -8,6 +8,12 @@
 #ifndef STACKQUEUE_HPP
 #define STACKQUEUE_HPP
 
+class StackQueue {
+public:
+    StackQueue();
 
+private:
+
+};
 
 #endif //LAB9_STACKQUEUE_HPP
