@@ -58,6 +58,9 @@ void StackQueue::queueOps() {
     // set buffer parameters
     bufferSetup();
 
+    // generate a random number from 1 - 1000
+    N = generateRandom(1000);
+
 
 }
 
@@ -83,10 +86,24 @@ void StackQueue::bufferSetup() {
 ** Description:     generates a random number from 1 to 1000 and
 **                  returns it
 *********************************************************************/
-int StackQueue::generateRandom() {
+int StackQueue::generateRandom(int max) {
     int randomNum = 0;
-    randomNum = rand() % 1000 + 1;
+    randomNum = rand() % max + 1;
     return randomNum;
+}
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+void StackQueue::appendNumber() {
+
+}
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+void StackQueue::removeNumber() {
+
 }
 
 /*********************************************************************
@@ -103,4 +120,13 @@ int StackQueue::generateRandom() {
 ** Description:     desc
 *********************************************************************/
 
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
 

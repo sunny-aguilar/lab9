@@ -22,7 +22,9 @@ public:
     void start();
     void queueOps();
     void bufferSetup();
-    int generateRandom();
+    int generateRandom(int max);
+    void appendNumber();
+    void removeNumber();
 
 private:
     queue <int> myQueue;
