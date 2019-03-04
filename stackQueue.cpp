@@ -247,8 +247,8 @@ void StackQueue::showStack(stack<char> s) {
 
 /*********************************************************************
 ** Description:     This function displays the character at the top
- *                  of the stack and then pops it off using the pop()
- *                  member function of the stack container.
+**                  of the stack and then pops it off using the pop()
+**                  member function of the stack container.
 *********************************************************************/
 void StackQueue::popStack() {
     if (!myStack.empty()) {
