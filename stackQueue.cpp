@@ -3,7 +3,9 @@
 ** Date:            March 3, 2019
 ** Description:     StackQueue class holds the
 **                  for the program. The menu class also holds the
-**                  user input validation function.
+**                  user input validation function. The STL containers
+ *                  for the stack and queue are implemented by
+ *                  calling the queue and stack libraries.
 *********************************************************************/
 #include "stackQueue.hpp"
 

@@ -4,7 +4,8 @@
 ** Description:     StackQueue class holds the
 **                  for the program. The menu class also holds the
 **                  user input validation function. The STL containers
- *                  for the stack and queue
+ *                  for the stack and queue are implemented by
+ *                  calling the queue and stack libraries.
 *********************************************************************/
 #ifndef STACKQUEUE_HPP
 #define STACKQUEUE_HPP
