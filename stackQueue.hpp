@@ -12,6 +12,7 @@
 #include <queue>                    // Queue in STL
 #include <stack>                    // Stack in STL
 #include <string>
+#include <cstring>
 using std::queue;
 using std::stack;
 using std::string;
@@ -40,7 +41,7 @@ public:
 
 private:
     queue <int> myQueue;
-    stack <string> myStack;
+    stack <char> myStack;
     Menu menu;
     int queueRounds;
     int frontChance;
@@ -50,6 +51,7 @@ private:
     double averageLength;
 
     string userString;
+    char myCString[30];
 
 };
 

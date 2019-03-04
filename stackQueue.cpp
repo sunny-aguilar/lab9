@@ -213,17 +213,21 @@ void StackQueue::stackOps() {
 ** Description:     desc
 *********************************************************************/
 void StackQueue::getUserString() {
+    char myString[30];
     menu.menuEnterString();
-    getline(cin, userString);
+    cin.getline(myString, 30);
+    strcpy(myCString, myString);
 }
 
 /*********************************************************************
 ** Description:     desc
 *********************************************************************/
 void StackQueue::addString() {
-    for (unsigned long index = 0; index < userString.length(); index++) {
-        cout << userString.at(index) << " ";
+    for (unsigned long index = 0; index < strlen(myCString); index++) {
+        //cout << myCString.at(index) << " ";
+        cout << myCString[index] << " ";
         //myStack.push( userString.at(index) );
+        myStack.push( myCString[index] );
     }
     cout << endl;
 }
@@ -233,6 +237,7 @@ void StackQueue::addString() {
 *********************************************************************/
 void StackQueue::showStack() {
     if (!myStack.empty()) {
+        cout << "Popping stack\n";
         for (int index = 0; index < userString.length(); index++) {
             cout << myStack.top() << " ";
             myStack.pop();
