@@ -195,7 +195,7 @@ void StackQueue::bufferAverageLenght(int round) {
 
 /*********************************************************************
 ** Description:     this function controls the stack operations that
- *                  show a palindrome.
+**                  show a palindrome.
 *********************************************************************/
 void StackQueue::stackOps() {
     // get string from user
