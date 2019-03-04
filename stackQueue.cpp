@@ -70,7 +70,14 @@ void StackQueue::queueOps() {
         // remove a number
         removeNumber();
 
-        cout << "Size of Queue " << myQueue.size() << endl;
+        // output the values in the buffer
+        showBuffer();
+
+        // output buffer length
+        bufferLength();
+
+        // output the average length of buffer
+
 
         round++;
     }
@@ -99,7 +106,6 @@ void StackQueue::bufferSetup() {
 int StackQueue::generateRandom(int max) {
     int randomNum = 0;
     randomNum = rand() % max + 1;
-    cout << "randomNum is " << randomNum << endl;
     return randomNum;
 }
 
@@ -110,6 +116,7 @@ void StackQueue::appendNumber() {
     int appendChance = generateRandom(100);
 
     if (appendChance <= frontChance) {
+        cout << "N was appended\n";
         myQueue.push(N);
     }
     else {
@@ -124,6 +131,7 @@ void StackQueue::removeNumber() {
     int removeChance = generateRandom(100);
 
     if (removeChance <= endChance) {
+        cout << "\nN was removed\n";
         myQueue.pop();
     }
     else {
@@ -134,7 +142,16 @@ void StackQueue::removeNumber() {
 /*********************************************************************
 ** Description:     desc
 *********************************************************************/
+void StackQueue::showBuffer() {
 
+}
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+void StackQueue::bufferLength() {
+    cout << "Length of buffer " << myQueue.size() << endl;
+}
 
 /*********************************************************************
 ** Description:     desc
