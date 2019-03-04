@@ -3,13 +3,9 @@
 ** Date:            March 3, 2019
 ** Description:     This lab implements linear data structures using
 **                  STL containers "stack" and "queue." The buffer is
-**                  implemented using the STL queue container. The
-**                  stack
-**                  i
-**                  searched for a user-entered value. After the
-**                  search is done, the arrays are sorted in
-**                  ascending order. Once the arrays are sorted, text
-**                  files are outputted with the sorted values.
+**                  implemented using the STL queue container. An
+**                  STL stack container is used to help build a
+**                  palindrome.
 *********************************************************************/
 #include "stackQueue.hpp"
 #include <iostream>
