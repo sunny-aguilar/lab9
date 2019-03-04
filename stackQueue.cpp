@@ -214,7 +214,8 @@ void StackQueue::stackOps() {
 }
 
 /*********************************************************************
-** Description:     this function gets a user's string and enters
+** Description:     this function gets a user's string and stores
+**                  it in a class data member
 *********************************************************************/
 void StackQueue::getUserString() {
     menu.menuEnterString();
