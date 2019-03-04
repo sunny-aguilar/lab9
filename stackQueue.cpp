@@ -194,7 +194,8 @@ void StackQueue::bufferAverageLenght(int round) {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     this function controls the stack operations that
+ *                  show a palindrome.
 *********************************************************************/
 void StackQueue::stackOps() {
     // get string from user
@@ -213,13 +214,11 @@ void StackQueue::stackOps() {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     this function gets a user's string and enters
 *********************************************************************/
 void StackQueue::getUserString() {
-    char myString[30];
     menu.menuEnterString();
-    cin.getline(myString, 30);
-    strcpy(myCString, myString);
+    cin.getline(myCString, 30);
 }
 
 /*********************************************************************

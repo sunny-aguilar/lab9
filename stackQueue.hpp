@@ -51,7 +51,6 @@ private:
     unsigned long bufferSize;
     double averageLength;
 
-    string userString;
     char myCString[30];
 
 };
