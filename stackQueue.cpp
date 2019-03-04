@@ -58,17 +58,23 @@ void StackQueue::queueOps() {
     // set buffer parameters
     bufferSetup();
 
-    // generate a random number from 1 - 1000
-    N = generateRandom(1000);
-    cout << "N is " << N << endl;
+    int round = 0;
+    while (round < queueRounds) {
+        // generate a random number from 1 - 1000
+        N = generateRandom(1000);
+        cout << "N is " << N << endl;
 
-    // append a number
-    appendNumber();
+        // append a number
+        appendNumber();
 
-    // remove a number
-    removeNumber();
+        // remove a number
+        removeNumber();
 
-    cout << "Size of Queue " << myQueue.size() << endl;
+        cout << "Size of Queue " << myQueue.size() << endl;
+
+        round++;
+    }
+
 }
 
 /*********************************************************************
