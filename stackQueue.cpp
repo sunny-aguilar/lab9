@@ -81,7 +81,7 @@ void StackQueue::queueOps() {
 
         round++;
     }
-
+    cout << endl << endl;
 }
 
 /*********************************************************************
@@ -140,9 +140,11 @@ void StackQueue::showBuffer(queue <int> myQ) {
     queue <int> q = myQ;
 
     cout << "The values in the buffer are:";
-    while (!q.empty()) {
-        cout << "\t" << q.front();
-        q.pop();
+    if (!q.empty()) {
+        while (!q.empty()) {
+            cout << "\t" << q.front();
+            q.pop();
+        }
     }
     cout << endl;
 }
