@@ -223,7 +223,10 @@ void StackQueue::getUserString() {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     this function adds the user entered string into
+**                  the stack by calling the stack data member
+**                  function push() that adds each word in the letter
+**                  to the stack
 *********************************************************************/
 void StackQueue::addString() {
     for (unsigned long index = 0; index < strlen(myCString); index++) {
@@ -232,23 +235,20 @@ void StackQueue::addString() {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     This function shows the user entered string. This
+**                  function receives the stack object as a parameter
+**                  and it is received by value.
 *********************************************************************/
 void StackQueue::showStack(stack<char> s) {
     for (unsigned i = 0; i < strlen(myCString); i++) {
         cout << myCString[i];
     }
-
-//    if (!s.empty()) {
-//        for (unsigned index = 0; index < strlen(myCString); index++) {
-//            cout << s.top();
-//            s.pop();
-//        }
-//    }
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     This function displays the character at the top
+ *                  of the stack and then pops it off using the pop()
+ *                  member function of the stack container.
 *********************************************************************/
 void StackQueue::popStack() {
     if (!myStack.empty()) {
@@ -258,8 +258,3 @@ void StackQueue::popStack() {
         }
     }
 }
-
-/*********************************************************************
-** Description:     desc
-*********************************************************************/
-
