@@ -27,6 +27,7 @@ public:
     void removeNumber();
     void showBuffer(queue <int> q);
     void bufferLength();
+    void bufferAverageLenght();
 
 private:
     queue <int> myQueue;
@@ -36,6 +37,7 @@ private:
     int frontChance;
     int endChance;
     int N;
+    int bufferSize;
     double averageLength;
 };
 

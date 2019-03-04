@@ -11,7 +11,7 @@
 ** Description:     default constructor
 *********************************************************************/
 StackQueue::StackQueue() :
-    queueRounds{0},
+    queueRounds{1},
     frontChance{0},
     endChance{0},
     N{0},
@@ -53,7 +53,13 @@ void StackQueue::start() {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     this function carries out the operations of the
+**                  queue by calling the appropriate functions per
+**                  the lab specifications. The buffer parameters are
+**                  first set up then a loop is used to append and
+**                  remove values in the queue. Finally, the buffer
+**                  values and length are displayed.
+**                  values and length are displayed.
 *********************************************************************/
 void StackQueue::queueOps() {
     // set buffer parameters
@@ -77,8 +83,9 @@ void StackQueue::queueOps() {
         bufferLength();
 
         // output the average length of buffer
+        bufferAverageLenght();
 
-
+        // update round
         round++;
     }
     cout << endl << endl;
@@ -110,7 +117,8 @@ int StackQueue::generateRandom(int max) {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     appends a number to the queue by using the push()
+**                  member function that is part of the STL
 *********************************************************************/
 void StackQueue::appendNumber() {
     int appendChance = generateRandom(100);
@@ -123,7 +131,8 @@ void StackQueue::appendNumber() {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     removes a value from the queue/buffer using the
+**                  queue member function pop()
 *********************************************************************/
 void StackQueue::removeNumber() {
     int removeChance = generateRandom(100);
@@ -134,7 +143,13 @@ void StackQueue::removeNumber() {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     displays the value in the queue by using a while
+**                  loop to show any values in the queue while it is
+**                  not empty. The function takes a queue data type
+**                  and it displays the front of the queue using
+**                  front() and then subsequently removing the front
+**                  value using pop(). Since the queue is passed by
+**                  value, the original queue remains the same.
 *********************************************************************/
 void StackQueue::showBuffer(queue <int> myQ) {
     queue <int> q = myQ;
@@ -150,10 +165,27 @@ void StackQueue::showBuffer(queue <int> myQ) {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     display the length of the buffer
 *********************************************************************/
 void StackQueue::bufferLength() {
-    cout << "Length of buffer " << myQueue.size() << endl;
+    bufferSize = myQueue.size();
+    cout << "Length of buffer " << bufferSize << endl << endl;
+}
+
+/*********************************************************************
+** Description:     this function implements the average length using
+**                  the formula provided in the lab
+*********************************************************************/
+void StackQueue::bufferAverageLenght() {
+    double avgLength = 0.0;
+
+    // use averageLength if not the first round
+    if (queueRounds > 0) {
+        avgLength = averageLength;
+    }
+
+    // compute the average length
+    averageLength = (avgLength * (queueRounds - 1) + bufferSize ) / queueRounds;
 }
 
 /*********************************************************************
@@ -175,3 +207,7 @@ void StackQueue::bufferLength() {
 ** Description:     desc
 *********************************************************************/
 
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
