@@ -60,7 +60,13 @@ void StackQueue::queueOps() {
 
     // generate a random number from 1 - 1000
     N = generateRandom(1000);
+    cout << "N is " << N << endl;
 
+    // append a number
+    appendNumber();
+
+    // remove a number
+    removeNumber();
 
 }
 
@@ -68,18 +74,15 @@ void StackQueue::queueOps() {
 ** Description:     this functions gathers the data from the user to
 **                  set up the initial buffer parameters. It sets up
 **                  the number of rounds to be simulated and the
-**                  rquired percentages.
+**                  required percentages.
 *********************************************************************/
 void StackQueue::bufferSetup() {
-    int remainingPercent = 0;
-
     menu.menuQueueRounds();
     queueRounds = menu.validateNumber(1, 1000);
     menu.menuQueueFront();
-    frontChance = menu.validateNumber(0, 99);
-    remainingPercent = 100 - frontChance;
-    menu.menuQueueEnd(remainingPercent);
-    endChance = menu.validateNumber(0,remainingPercent);
+    frontChance = menu.validateNumber(0, 100);
+    menu.menuQueueEnd();
+    endChance = menu.validateNumber(0,100);
 }
 
 /*********************************************************************
@@ -89,6 +92,7 @@ void StackQueue::bufferSetup() {
 int StackQueue::generateRandom(int max) {
     int randomNum = 0;
     randomNum = rand() % max + 1;
+    cout << "randomNum is " << randomNum << endl;
     return randomNum;
 }
 
@@ -96,14 +100,28 @@ int StackQueue::generateRandom(int max) {
 ** Description:     desc
 *********************************************************************/
 void StackQueue::appendNumber() {
+    int appendChance = generateRandom(100);
 
+    if (appendChance <= frontChance) {
+        myQueue.push(N);
+    }
+    else {
+        cout << "N was not appended\n";
+    }
 }
 
 /*********************************************************************
 ** Description:     desc
 *********************************************************************/
 void StackQueue::removeNumber() {
+    int removeChance = generateRandom(100);
 
+    if (removeChance <= endChance) {
+        myQueue.pop();
+    }
+    else {
+        cout << "N was not removed from the front\n";
+    }
 }
 
 /*********************************************************************
