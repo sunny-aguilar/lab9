@@ -14,7 +14,8 @@ StackQueue::StackQueue() :
     queueRounds{0},
     frontChance{0},
     endChance{0},
-    N{0} {}
+    N{0},
+    averageLength{0} {}
 
 /*********************************************************************
 ** Description:     destructor

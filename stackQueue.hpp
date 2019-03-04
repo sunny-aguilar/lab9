@@ -36,6 +36,7 @@ private:
     int frontChance;
     int endChance;
     int N;
+    double averageLength;
 };
 
 #endif // STACKQUEUE_HPP
