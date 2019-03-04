@@ -37,7 +37,8 @@ public:
     void stackOps();
     void getUserString();
     void addString();
-    void showStack();
+    void showStack(stack<char> s);
+    void popStack();
 
 private:
     queue <int> myQueue;

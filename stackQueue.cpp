@@ -204,7 +204,10 @@ void StackQueue::stackOps() {
     addString();
 
     // show stack
-    showStack();
+    showStack(myStack);
+
+    // pop stack
+    popStack();
 
     cout << endl << endl;
 }
@@ -224,23 +227,22 @@ void StackQueue::getUserString() {
 *********************************************************************/
 void StackQueue::addString() {
     for (unsigned long index = 0; index < strlen(myCString); index++) {
-        //cout << myCString.at(index) << " ";
-        cout << myCString[index] << " ";
-        //myStack.push( userString.at(index) );
         myStack.push( myCString[index] );
     }
-    cout << endl;
 }
 
 /*********************************************************************
 ** Description:     desc
 *********************************************************************/
-void StackQueue::showStack() {
-    if (!myStack.empty()) {
-        cout << "Popping stack\n";
-        for (int index = 0; index < userString.length(); index++) {
-            cout << myStack.top() << " ";
-            myStack.pop();
+void StackQueue::showStack(stack<char> s) {
+    for (int i = 0; i < strlen(myCString); i++) {
+        cout << myCString[i];
+    }
+
+    if (!s.empty()) {
+        for (int index = 0; index < strlen(myCString); index++) {
+            cout << s.top();
+            s.pop();
         }
     }
 }
@@ -248,7 +250,14 @@ void StackQueue::showStack() {
 /*********************************************************************
 ** Description:     desc
 *********************************************************************/
-
+void StackQueue::popStack() {
+    if (!myStack.empty()) {
+        for (int index = 0; index < strlen(myCString); index++) {
+            cout << myStack.top();
+            myStack.pop();
+        }
+    }
+}
 
 /*********************************************************************
 ** Description:     desc
