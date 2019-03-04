@@ -68,6 +68,7 @@ void StackQueue::queueOps() {
     // remove a number
     removeNumber();
 
+    cout << "Size of Queue " << myQueue.size() << endl;
 }
 
 /*********************************************************************
