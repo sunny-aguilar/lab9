@@ -145,10 +145,13 @@ void StackQueue::removeNumber() {
 *********************************************************************/
 void StackQueue::showBuffer(queue <int> myQ) {
     queue <int> q = myQ;
+
+    cout << "The values in the buffer are:";
     while (!q.empty()) {
         cout << "\t" << q.front();
         q.pop();
     }
+    cout << endl;
 }
 
 /*********************************************************************
