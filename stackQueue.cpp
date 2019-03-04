@@ -83,7 +83,7 @@ void StackQueue::queueOps() {
         bufferLength();
 
         // output the average length of buffer
-        bufferAverageLenght();
+        bufferAverageLenght(round+1);
 
         // update round
         round++;
@@ -138,7 +138,9 @@ void StackQueue::removeNumber() {
     int removeChance = generateRandom(100);
 
     if (removeChance <= endChance) {
-        myQueue.pop();
+        if (!myQueue.empty()) {
+            myQueue.pop();
+        }
     }
 }
 
@@ -169,14 +171,14 @@ void StackQueue::showBuffer(queue <int> myQ) {
 *********************************************************************/
 void StackQueue::bufferLength() {
     bufferSize = myQueue.size();
-    cout << "Length of buffer " << bufferSize << endl << endl;
+    cout << "Length of buffer " << bufferSize << endl;
 }
 
 /*********************************************************************
 ** Description:     this function implements the average length using
 **                  the formula provided in the lab
 *********************************************************************/
-void StackQueue::bufferAverageLenght() {
+void StackQueue::bufferAverageLenght(int round) {
     double avgLength = 0.0;
 
     // use averageLength if not the first round
@@ -185,7 +187,16 @@ void StackQueue::bufferAverageLenght() {
     }
 
     // compute the average length
-    averageLength = (avgLength * (queueRounds - 1) + bufferSize ) / queueRounds;
+    averageLength = (avgLength * (round - 1) + bufferSize ) / round;
+    cout << "avgLength " << avgLength << endl;
+    cout << "Current Round " << round << endl;
+    cout << "queueRounds " << queueRounds << endl;
+    cout << "bufferSize " << bufferSize << endl;
+    cout << "queueRounds " << queueRounds << endl;
+    cout << "averageLength " << averageLength << endl;
+
+    // display average length
+    cout << "Average length of the buffer: " << averageLength << endl << endl;
 }
 
 /*********************************************************************

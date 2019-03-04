@@ -20,6 +20,8 @@ public:
     StackQueue();
     ~StackQueue();
     void start();
+
+    // queue/buffer functions
     void queueOps();
     void bufferSetup();
     int generateRandom(int max);
@@ -27,7 +29,10 @@ public:
     void removeNumber();
     void showBuffer(queue <int> q);
     void bufferLength();
-    void bufferAverageLenght();
+    void bufferAverageLenght(int round);
+
+    // stack functions
+
 
 private:
     queue <int> myQueue;
@@ -39,6 +44,9 @@ private:
     int N;
     int bufferSize;
     double averageLength;
+
+
+
 };
 
 #endif // STACKQUEUE_HPP
