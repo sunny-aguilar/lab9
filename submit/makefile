@@ -1,7 +1,7 @@
 # File: 	makefile
 # Author: 	Sandro Aguilar
-# Date: 	March 1, 2019
-# Description:	Makefile for Lab 8
+# Date: 	March 4, 2019
+# Description:	Makefile for Lab 9
 
 # Variables to control Makefile operation
 
@@ -13,26 +13,26 @@ CXXFLAGS += -std=c++0x
 
 OBJECTS = main.o
 OBJECTS += menu.o
-OBJECTS += searchSort.o
+OBJECTS += stackQueue.o
 
 HPPs = menu.hpp
-HPPs = searchSort.hpp
+HPPs = stackQueue.hpp
 
 CPPs = main.cpp
 CPPs = menu.cpp
-CPPs += searchSort.cpp
+CPPs += stackQueue.cpp
 
 
 # Targets needed to bring the executable up to date
-Search: $(OBJECTS)
-	$(CXX) $(CXXFLAGS) -o Search $(OBJECTS)
+STL: $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o STL $(OBJECTS)
 
 main.o: main.cpp $(HPPs)
 	$(CXX) $(CXXFLAGS) -c main.cpp
 
 menu.o: menu.hpp
 
-searchSort.o: searchSort.hpp
+stackQueue.o: stackQueue.hpp
 
 
 # Clean-up operations
@@ -40,7 +40,7 @@ clean:
 	rm Search *.o
 
 debug:
-	valgrind -v --leak-check=full --show-leak-kinds=all --track-origins=yes ./Search
+	valgrind -v --leak-check=full --show-leak-kinds=all --track-origins=yes ./STL
 
 zip:
-	zip -D Lab8_Aguilar_Sandro.zip $(CPPs) $(HPPs) $(TXTS) makefile *.txt *.pdf
+	zip -D Lab9_Aguilar_Sandro.zip $(CPPs) $(HPPs) $(TXTS) makefile *.txt *.pdf
