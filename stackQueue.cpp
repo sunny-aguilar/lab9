@@ -63,7 +63,6 @@ void StackQueue::queueOps() {
     while (round < queueRounds) {
         // generate a random number from 1 - 1000
         N = generateRandom(1000);
-        cout << "N is " << N << endl;
 
         // append a number
         appendNumber();
@@ -117,11 +116,9 @@ void StackQueue::appendNumber() {
     int appendChance = generateRandom(100);
 
     if (appendChance <= frontChance) {
-        cout << "N was appended\n";
         myQueue.push(N);
     }
     else {
-        cout << "N was not appended\n";
     }
 }
 
@@ -132,11 +129,7 @@ void StackQueue::removeNumber() {
     int removeChance = generateRandom(100);
 
     if (removeChance <= endChance) {
-        cout << "\nN was removed\n";
         myQueue.pop();
-    }
-    else {
-        cout << "N was not removed from the front\n";
     }
 }
 
