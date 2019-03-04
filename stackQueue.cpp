@@ -72,7 +72,7 @@ void StackQueue::queueOps() {
         removeNumber();
 
         // output the values in the buffer
-        showBuffer();
+        showBuffer(myQueue);
 
         // output buffer length
         bufferLength();
@@ -143,8 +143,12 @@ void StackQueue::removeNumber() {
 /*********************************************************************
 ** Description:     desc
 *********************************************************************/
-void StackQueue::showBuffer() {
-
+void StackQueue::showBuffer(queue <int> myQ) {
+    queue <int> q = myQ;
+    while (!q.empty()) {
+        cout << "\t" << q.front();
+        q.pop();
+    }
 }
 
 /*********************************************************************

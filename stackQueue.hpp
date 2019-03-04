@@ -25,7 +25,7 @@ public:
     int generateRandom(int max);
     void appendNumber();
     void removeNumber();
-    void showBuffer();
+    void showBuffer(queue <int> q);
     void bufferLength();
 
 private:
