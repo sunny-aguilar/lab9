@@ -221,9 +221,9 @@ void StackQueue::getUserString() {
 ** Description:     desc
 *********************************************************************/
 void StackQueue::addString() {
-    for (int index = 0; index < userString.length(); index++) {
+    for (unsigned long index = 0; index < userString.length(); index++) {
         cout << userString.at(index) << " ";
-        myStack.push( userString.at(index) );
+        //myStack.push( userString.at(index) );
     }
     cout << endl;
 }
@@ -232,9 +232,11 @@ void StackQueue::addString() {
 ** Description:     desc
 *********************************************************************/
 void StackQueue::showStack() {
-    for (int index = 0; index < userString.length(); index++) {
-        cout << myStack.top() << " ";
-        myStack.pop();
+    if (!myStack.empty()) {
+        for (int index = 0; index < userString.length(); index++) {
+            cout << myStack.top() << " ";
+            myStack.pop();
+        }
     }
 }
 

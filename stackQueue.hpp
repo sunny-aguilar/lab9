@@ -46,7 +46,7 @@ private:
     int frontChance;
     int endChance;
     int N;
-    int bufferSize;
+    unsigned long bufferSize;
     double averageLength;
 
     string userString;
