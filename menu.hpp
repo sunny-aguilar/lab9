@@ -26,6 +26,7 @@ public:
     void menuQueueRounds();
     void menuQueueFront();
     void menuQueueEnd();
+    void menuEnterString();
     void menuExit();
     int validateNumber(int min, int max);
 

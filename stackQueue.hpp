@@ -11,9 +11,10 @@
 #include "menu.hpp"
 #include <queue>                    // Queue in STL
 #include <stack>                    // Stack in STL
+#include <string>
 using std::queue;
 using std::stack;
-
+using std::string;
 
 class StackQueue {
 public:
@@ -32,11 +33,14 @@ public:
     void bufferAverageLenght(int round);
 
     // stack functions
-
+    void stackOps();
+    void getUserString();
+    void addString();
+    void showStack();
 
 private:
     queue <int> myQueue;
-    stack <int> myStack;
+    stack <string> myStack;
     Menu menu;
     int queueRounds;
     int frontChance;
@@ -45,7 +49,7 @@ private:
     int bufferSize;
     double averageLength;
 
-
+    string userString;
 
 };
 

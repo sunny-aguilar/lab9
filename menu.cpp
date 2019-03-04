@@ -54,8 +54,14 @@ void Menu::menuQueueEnd() {
     cout << " >> ";
 }
 
-
-
+/*********************************************************************
+** Description:     prompts the user to enter a string
+*********************************************************************/
+void Menu::menuEnterString() {
+    cout << " Enter a string\n";
+    cout << "+--------------------------------------------------+\n";
+    cout << " >> ";
+}
 
 
 

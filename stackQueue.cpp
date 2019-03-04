@@ -40,7 +40,7 @@ void StackQueue::start() {
                 queueOps();
                 break;
             case 2:
-
+                stackOps();
                 break;
             case 3:
                 runProgram = false;
@@ -188,15 +188,54 @@ void StackQueue::bufferAverageLenght(int round) {
 
     // compute the average length
     averageLength = (avgLength * (round - 1) + bufferSize ) / round;
-    cout << "avgLength " << avgLength << endl;
-    cout << "Current Round " << round << endl;
-    cout << "queueRounds " << queueRounds << endl;
-    cout << "bufferSize " << bufferSize << endl;
-    cout << "queueRounds " << queueRounds << endl;
-    cout << "averageLength " << averageLength << endl;
 
     // display average length
     cout << "Average length of the buffer: " << averageLength << endl << endl;
+}
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+void StackQueue::stackOps() {
+    // get string from user
+    getUserString();
+
+    // add string to stack
+    addString();
+
+    // show stack
+    showStack();
+
+    cout << endl << endl;
+}
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+void StackQueue::getUserString() {
+    menu.menuEnterString();
+    getline(cin, userString);
+}
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+void StackQueue::addString() {
+    for (int index = 0; index < userString.length(); index++) {
+        cout << userString.at(index) << " ";
+        myStack.push( userString.at(index) );
+    }
+    cout << endl;
+}
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+void StackQueue::showStack() {
+    for (int index = 0; index < userString.length(); index++) {
+        cout << myStack.top() << " ";
+        myStack.pop();
+    }
 }
 
 /*********************************************************************
@@ -208,17 +247,3 @@ void StackQueue::bufferAverageLenght(int round) {
 ** Description:     desc
 *********************************************************************/
 
-
-/*********************************************************************
-** Description:     desc
-*********************************************************************/
-
-
-/*********************************************************************
-** Description:     desc
-*********************************************************************/
-
-
-/*********************************************************************
-** Description:     desc
-*********************************************************************/
