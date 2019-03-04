@@ -235,16 +235,16 @@ void StackQueue::addString() {
 ** Description:     desc
 *********************************************************************/
 void StackQueue::showStack(stack<char> s) {
-    for (int i = 0; i < strlen(myCString); i++) {
+    for (unsigned i = 0; i < strlen(myCString); i++) {
         cout << myCString[i];
     }
 
-    if (!s.empty()) {
-        for (int index = 0; index < strlen(myCString); index++) {
-            cout << s.top();
-            s.pop();
-        }
-    }
+//    if (!s.empty()) {
+//        for (unsigned index = 0; index < strlen(myCString); index++) {
+//            cout << s.top();
+//            s.pop();
+//        }
+//    }
 }
 
 /*********************************************************************
@@ -252,7 +252,7 @@ void StackQueue::showStack(stack<char> s) {
 *********************************************************************/
 void StackQueue::popStack() {
     if (!myStack.empty()) {
-        for (int index = 0; index < strlen(myCString); index++) {
+        for (unsigned index = 0; index < strlen(myCString); index++) {
             cout << myStack.top();
             myStack.pop();
         }
