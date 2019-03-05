@@ -83,7 +83,7 @@ void StackQueue::queueOps() {
         bufferLength();
 
         // output the average length of buffer
-        bufferAverageLenght(round+1);
+        bufferAverageLength(round+1);
 
         // update round
         round++;
