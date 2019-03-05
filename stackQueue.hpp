@@ -50,9 +50,7 @@ private:
     int N;
     unsigned long bufferSize;
     double averageLength;
-
     char myCString[30];
-
 };
 
 #endif // STACKQUEUE_HPP
