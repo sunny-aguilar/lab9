@@ -63,9 +63,6 @@ void Menu::menuEnterString() {
     cout << " >> ";
 }
 
-
-
-
 /*********************************************************************
 ** Description:     general validator where the parameters are the
 **                  min and max numbers acceptable
