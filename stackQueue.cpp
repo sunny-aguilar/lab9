@@ -85,7 +85,7 @@ void StackQueue::queueOps() {
         bufferLength();
 
         // output the average length of buffer
-        bufferAverageLenght(round+1);
+        bufferAverageLength(round+1);
 
         // update round
         round++;
@@ -180,7 +180,7 @@ void StackQueue::bufferLength() {
 ** Description:     this function implements the average length using
 **                  the formula provided in the lab
 *********************************************************************/
-void StackQueue::bufferAverageLenght(int round) {
+void StackQueue::bufferAverageLength(int round) {
     double avgLength = 0.0;
 
     // use averageLength if not the first round

@@ -24,7 +24,6 @@ public:
     StackQueue();
     ~StackQueue();
     void start();
-
     // queue/buffer functions
     void queueOps();
     void bufferSetup();
@@ -33,8 +32,7 @@ public:
     void removeNumber();
     void showBuffer(queue <int> q);
     void bufferLength();
-    void bufferAverageLenght(int round);
-
+    void bufferAverageLength(int round);
     // stack functions
     void stackOps();
     void getUserString();
@@ -52,9 +50,7 @@ private:
     int N;
     unsigned long bufferSize;
     double averageLength;
-
     char myCString[30];
-
 };
 
 #endif // STACKQUEUE_HPP
