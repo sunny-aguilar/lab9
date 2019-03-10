@@ -89,6 +89,9 @@ void StackQueue::queueOps() {
         round++;
     }
     cout << endl << endl;
+
+    // reset buffer
+
 }
 
 /*********************************************************************
@@ -191,6 +194,14 @@ void StackQueue::bufferAverageLength(int round) {
 
     // display average length
     cout << "Average length of the buffer: " << averageLength << endl << endl;
+}
+
+/*********************************************************************
+** Description:     this function resets the buffer parameters so that
+**                  a user can start with a fresh new buffer
+*********************************************************************/
+void StackQueue::resetBuffer() {
+    
 }
 
 /*********************************************************************

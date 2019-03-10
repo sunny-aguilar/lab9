@@ -31,6 +31,7 @@ public:
     void showBuffer(queue <int> q);
     void bufferLength();
     void bufferAverageLength(int round);
+    void resetBuffer();
     // stack functions
     void stackOps();
     void getUserString();
