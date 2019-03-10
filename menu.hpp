@@ -34,5 +34,4 @@ private:
 
 };
 
-
 #endif //LAB9_MENU_HPP
