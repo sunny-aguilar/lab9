@@ -201,11 +201,6 @@ void StackQueue::bufferAverageLength(int round) {
 **                  a user can start with a fresh new buffer
 *********************************************************************/
 void StackQueue::resetBuffer() {
-    cout << "Rounds " << queueRounds << endl;
-    cout << "Front %: " << frontChance << " Back %: " << endChance << endl;
-    cout << "Avg. Len: " << averageLength << endl;
-    cout << "Buffer size: " << bufferSize << endl;
-    cout << "N: " << N << endl;
     queueRounds = 1;
     frontChance = 0;
     endChance = 0;
