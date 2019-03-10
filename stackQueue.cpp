@@ -206,6 +206,19 @@ void StackQueue::resetBuffer() {
     cout << "Avg. Len: " << averageLength << endl;
     cout << "Buffer size: " << bufferSize << endl;
     cout << "N: " << N << endl;
+    queueRounds = 1;
+    frontChance = 0;
+    endChance = 0;
+    N = 0;
+    averageLength = 0;
+    if (!myQueue.empty()) {
+        while (!myQueue.empty()) {
+            myQueue.pop();
+        }
+    }
+    else {
+        cout << "Queue has been emptied\n";
+    }
 }
 
 /*********************************************************************
