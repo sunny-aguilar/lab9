@@ -1,12 +1,9 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 3, 2019
-** Description:     StackQueue class holds the functions that operate
- *                  the
-**                  for the program. The menu class also holds the
-**                  user input validation function. The STL containers
- *                  for the stack and queue are implemented by
- *                  calling the queue and stack libraries.
+** Description:     StackQueue class holds the functions that control
+**                  the flow of the program as well as the implementing
+**                  the STL containers for the Queue and Stack.
 *********************************************************************/
 #ifndef STACKQUEUE_HPP
 #define STACKQUEUE_HPP
