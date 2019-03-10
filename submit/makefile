@@ -16,10 +16,10 @@ OBJECTS += menu.o
 OBJECTS += stackQueue.o
 
 HPPs = menu.hpp
-HPPs = stackQueue.hpp
+HPPs += stackQueue.hpp
 
 CPPs = main.cpp
-CPPs = menu.cpp
+CPPs += menu.cpp
 CPPs += stackQueue.cpp
 
 
