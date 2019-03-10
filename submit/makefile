@@ -37,7 +37,7 @@ stackQueue.o: stackQueue.hpp
 
 # Clean-up operations
 clean:
-	rm Search *.o
+	rm STL *.o
 
 debug:
 	valgrind -v --leak-check=full --show-leak-kinds=all --track-origins=yes ./STL

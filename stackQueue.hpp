@@ -1,7 +1,8 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 3, 2019
-** Description:     StackQueue class holds the
+** Description:     StackQueue class holds the functions that operate
+ *                  the
 **                  for the program. The menu class also holds the
 **                  user input validation function. The STL containers
  *                  for the stack and queue are implemented by
